@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+.env
+
+# Tailwind output
+public/output.css
+
+# OS & editor files
+.DS_Store
+*.log
+.vscode/
