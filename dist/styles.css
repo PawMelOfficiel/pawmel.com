@@ -734,6 +734,10 @@ video {
   gap: 2rem;
 }
 
+.gap-6 {
+  gap: 1.5rem;
+}
+
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -843,6 +847,11 @@ video {
   padding-bottom: 3rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -926,6 +935,11 @@ video {
   background-color: rgb(43 138 40 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#8c7043\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(140 112 67 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#A87C56\]:hover {
   --tw-text-opacity: 1;
   color: rgb(168 124 86 / var(--tw-text-opacity));
@@ -957,5 +971,9 @@ video {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
   }
 }
