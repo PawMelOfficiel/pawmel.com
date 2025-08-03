@@ -21,9 +21,11 @@ function openMenu() {
     "space-y-6"
   );
 
-  // cacher logo et bouton burger
   logo.classList.add("hidden");
   burgerBtn.classList.add("hidden");
+
+  // Empêche le scroll du fond
+  document.body.classList.add("overflow-hidden");
 }
 
 function closeMenu() {
@@ -44,9 +46,11 @@ function closeMenu() {
     "space-y-6"
   );
 
-  // ré-afficher logo et bouton burger
   logo.classList.remove("hidden");
   burgerBtn.classList.remove("hidden");
+
+  // Réactive le scroll
+  document.body.classList.remove("overflow-hidden");
 }
 
 burgerBtn.addEventListener("click", openMenu);
