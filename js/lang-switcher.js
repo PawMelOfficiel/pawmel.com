@@ -29,7 +29,7 @@ function updateSwitcher(switcher) {
 
     let altLangPath;
 
-    if (path.startsWith("/en/home")) {
+    if (path.startsWith("/en/home/")) {
         // Remplacer '/en/home/' par '/accueil/' pour garder la même page en EN
         altLangPath = path.replace("/en/home/", "/accueil/");
     } else if (path.startsWith("/en/")) {
