@@ -1,4 +1,6 @@
 const PLACE_ID = "ChIJU7xZBC-CqCQRZRm2EiH0mqc";
+// Détection de la langue actuelle depuis l'URL
+const isEnglish = window.location.pathname.startsWith("/en/");
 
 async function fetchReviews(placeId) {
   const place = new google.maps.places.Place({ id: placeId });
@@ -33,11 +35,17 @@ async function displayReviews() {
     avisContainer.innerHTML = "";
 
     reviews.forEach((review, index) => {
-      const fullText = (review.originalText || "").trim();
+      // Choix du bon champ : texte traduit (text) ou original (originalText)
+      const fullText = (
+        isEnglish
+          ? review.text // traduit par Google
+          : review.originalText // langue d’origine
+      ) || "";
       const shortText = fullText.slice(0, 200);
       const isLong = fullText.length > 200;
 
       const clampClass = isLong ? "line-clamp-5" : ""; // Pas de clamp si pas long
+      const seeMore = isEnglish ? "See more" : "Voir plus";
 
       const div = document.createElement("div");
       div.className =
@@ -53,7 +61,7 @@ async function displayReviews() {
         </p>
 
         ${isLong
-          ? `<button id="toggle-${index}" class="text-sm text-[#176013] mt-2 hover:underline text-left">Voir plus</button>`
+          ? `<button id="toggle-${index}" class="text-sm text-[#176013] mt-2 hover:underline text-left">${seeMore}</button>`
           : `<div class="mt-2 opacity-0 pointer-events-none text-sm"></div>`
         }
       `;
@@ -64,18 +72,21 @@ async function displayReviews() {
         const toggleBtn = div.querySelector(`#toggle-${index}`);
         const textEl = div.querySelector(`#review-text-${index}`);
         let expanded = false;
+        const seeLess = isEnglish ? "See less" : "Voir moins";
 
         toggleBtn.addEventListener("click", () => {
           expanded = !expanded;
           textEl.classList.toggle("line-clamp-5");
-          toggleBtn.textContent = expanded ? "Voir moins" : "Voir plus";
+          toggleBtn.textContent = expanded ? seeLess : seeMore;
         });
       }
     });
 
+    const seeMoreReviews = isEnglish ? "See more reviews on Google" : "Voir plus d'avis sur Google";
+
     reviewsLinkContainer.innerHTML = `
       <a href="https://www.google.com/maps/place/?q=place_id:${PLACE_ID}" target="_blank" class="bg-[#176013] text-white px-6 py-3 rounded-full hover:bg-[#14530f] transition" rel="noopener noreferrer">
-        Voir plus d'avis sur Google
+        ${seeMoreReviews}
       </a>
     `;
   } catch (error) {
