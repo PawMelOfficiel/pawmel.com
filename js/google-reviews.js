@@ -5,7 +5,8 @@ async function fetchReviews(placeId) {
   const result = await place.fetchFields({
     fields: ["reviews", "rating", "userRatingCount"],
   });
-  return result.place.Dg.reviews?.slice(0, 6) || [];
+  return result.place.Dg.reviews?.sort((a, b) => b.publishTime - a.publishTime) // Tri décroissant
+    .slice(0, 6); // Garde les 6 plus récents
 }
 
 async function displayReviews() {
@@ -51,10 +52,9 @@ async function displayReviews() {
           "${fullText}"
         </p>
 
-        ${
-          isLong
-            ? `<button id="toggle-${index}" class="text-sm text-[#176013] mt-2 hover:underline text-left">Voir plus</button>`
-            : `<div class="mt-2 opacity-0 pointer-events-none text-sm"></div>`
+        ${isLong
+          ? `<button id="toggle-${index}" class="text-sm text-[#176013] mt-2 hover:underline text-left">Voir plus</button>`
+          : `<div class="mt-2 opacity-0 pointer-events-none text-sm"></div>`
         }
       `;
 
