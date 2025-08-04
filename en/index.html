@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
+    <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
 
-    <title>PawMel - Pet-sitting multi-espèces</title>
+    <title>PawMel - Multi-species pet-sitting</title>
 
     <meta name="description"
-        content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur. Services attentionnés pour animaux de compagnie." />
+        content="PawMel, to take care of your furry, feathered or scaled companions, passionately and gently. Attentive pet services." />
 
     <!-- Open Graph (Facebook, LinkedIn) -->
-    <meta property="og:title" content="PawMel - Le bonheur à fourrure, plumes ou écailles" />
+    <meta property="og:title" content="PawMel - Furry, feathered or scaled happiness" />
     <meta property="og:description"
-        content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur." />
+        content="PawMel, to take care of your furry, feathered or scaled companions, passionately and gently." />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://pawmel.com" />
+    <meta property="og:url" content="https://pawmel.com/en" />
     <meta property="og:image" content="https://pawmel.com/assets/PawMel-logo-transparent.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="PawMel - Le bonheur à fourrure, plumes ou écailles" />
+    <meta name="twitter:title" content="PawMel - Furry, feathered or scaled happiness" />
     <meta name="twitter:description"
-        content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur." />
+        content="PawMel, to take care of your furry, feathered or scaled companions, passionately and gently." />
     <meta name="twitter:image" content="https://pawmel.com/assets/PawMel-logo-transparent.png" />
 
     <!-- Favicon -->
@@ -40,7 +42,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo&family=Nunito+Sans&display=swap" rel="stylesheet" />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://pawmel.com" />
+    <link rel="canonical" href="https://pawmel.com/en/" />
 
     <!-- Robots -->
     <meta name="robots" content="index, follow" />
@@ -51,18 +53,18 @@
     <header class="flex items-center justify-between py-6 px-6 shadow-md text-[#176013] relative">
         <!-- Logo à gauche -->
         <div class="flex-shrink-0">
-            <a href="/accueil/" class="inline-block">
+            <a href="/en/home/" class="inline-block">
                 <img src="/assets/PawMel-logo-transparent.png" alt="PawMel logo" class="h-12 w-auto" />
             </a>
         </div>
 
         <!-- Nav centré (desktop uniquement à partir de lg) -->
         <nav class="hidden lg:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
-            <a href="/accueil/" class="hover:underline">Accueil</a>
-            <a href="/services/" class=" hover:underline">Services</a>
-            <a href="/plus/" class="hover:underline">Les Plus</a>
-            <a href="/booking/" class="hover:underline">Réservation</a>
-            <a href="/social-media/" class="hover:underline">Réseaux Sociaux</a>
+            <a href="/en/home/" class="hover:underline">Home</a>
+            <a href="/en/services/" class=" hover:underline">Services</a>
+            <a href="/en/plus/" class="hover:underline">Benefits</a>
+            <a href="/en/booking/" class="hover:underline">Booking</a>
+            <a href="/en/social-media/" class="hover:underline">Social Media</a>
         </nav>
 
         <!-- Icônes + bouton à droite (desktop à partir de lg) -->
@@ -103,9 +105,9 @@
             <div id="lang-switcher-desktop" class="ml-4"></div>
 
             <!-- Bouton Réserver -->
-            <a href="/booking/"
+            <a href="/en/booking/"
                 class="ml-4 px-10 py-2 bg-[#176013] text-lg text-[#FFF4DF] rounded-full hover:bg-[#2b8a28] transition">
-                Réserver
+                Book
             </a>
         </div>
 
@@ -131,12 +133,11 @@
 
             <div id="lang-switcher-burger"></div>
 
-            <a href="/accueil/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Accueil</a>
-            <a href="/services/" class=" block text-lg font-semibold py-2 hover:text-[#A87C56]">Services</a>
-            <a href="/plus/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Les Plus</a>
-            <a href="/booking/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Réservation</a>
-            <a href="/social-media/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Réseaux
-                Sociaux</a>
+            <a href="/en/home/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Home</a>
+            <a href="/en/services/" class=" block text-lg font-semibold py-2 hover:text-[#A87C56]">Services</a>
+            <a href="/en/plus/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Benefits</a>
+            <a href="/en/booking/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Booking</a>
+            <a href="/en/social-media/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Social Media</a>
 
             <div class="flex space-x-4 py-4">
                 <!-- Icônes réseaux sociaux -->
@@ -175,9 +176,9 @@
             </div>
 
             <!-- Bouton Réserver mobile -->
-            <a href="/booking/"
+            <a href="/en/booking/"
                 class="block w-full px-4 py-3 bg-[#176013] text-lg text-[#FFF4DF] text-center rounded-full hover:bg-[#2b8a28] transition">
-                Réserver
+                Book
             </a>
         </div>
     </header>
@@ -185,19 +186,19 @@
     <main
         class="text-[#A87C56] flex-grow max-w-4xl mx-auto py-16 px-4 text-center flex flex-col justify-center items-center">
         <h1 class="text-5xl font-baloo mb-8">
-            Le bonheur à <br />
-            fourrure, plumes ou écailles
+            Furry, feathered or scaled<br />
+            happiness
         </h1>
         <span class="mb-8">
-            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Moi, c'est Clémence</h2>
-            <p class="text-xl font-nunito">passionnée d'animaux, douce et attentive</p>
+            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Hi, I'm Clémence</h2>
+            <p class="text-xl font-nunito">animal lover, gentle and attentive</p>
         </span>
-        <p class="text-xl font-nunito">J'ai créé <span class="text-[#176013] font-baloo">PawMel</span> pour prendre soin
-            de vos compagnons comme s'ils étaient les miens</p>
+        <p class="text-xl font-nunito">I created <span class="text-[#176013] font-baloo">PawMel</span> to care for your
+            beloved companions as if they were mine</p>
 
         <section id="avis" class="bg-[#FFF4DF] py-16 px-4">
             <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-baloo text-[#176013] mb-8">Ils m'ont fait confiance</h2>
+                <h2 class="text-4xl font-baloo text-[#176013] mb-8">They trusted me</h2>
 
                 <!-- Spinner -->
                 <div id="loading" class="flex justify-center mb-8">
@@ -219,7 +220,7 @@
         <!-- Ligne droits réservés centrée -->
         <div class="text-center mt-6">
             <p class="mb-1">
-                &copy; <span id="year"></span> PawMel - Tous droits réservés,
+                &copy; <span id="year"></span> PawMel - All rights reserved,
                 SIRET : 988 393 039 00017
             </p>
         </div>
