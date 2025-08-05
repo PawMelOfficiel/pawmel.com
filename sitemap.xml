@@ -25,13 +25,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pawmel.com/booking/</loc>
+    <loc>https://pawmel.com/fidelite/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pawmel.com/reservation/</loc>
     <lastmod>2025-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://pawmel.com/social-media/</loc>
+    <loc>https://pawmel.com/reseaux-sociaux/</loc>
     <lastmod>2025-08-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -56,6 +62,12 @@
   </url>
   <url>
     <loc>https://pawmel.com/en/plus/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://pawmel.com/loyalty/</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

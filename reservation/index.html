@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
+    <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
 
-    <title>PawMel - Pet-sitting multi-espèces</title>
+    <title>PawMel - Réservation</title>
 
     <meta name="description"
         content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur. Services attentionnés pour animaux de compagnie." />
@@ -184,37 +186,19 @@
         </div>
     </header>
 
-    <main
-        class="text-[#A87C56] flex-grow max-w-4xl mx-auto py-16 px-4 text-center flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-baloo mb-8">
-            Le bonheur à <br />
-            fourrure, plumes ou écailles
-        </h1>
-        <span class="mb-8">
-            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Moi, c'est Clémence</h2>
-            <p class="text-xl font-nunito">passionnée d'animaux, douce et attentive</p>
-        </span>
-        <p class="text-xl font-nunito">J'ai créé <span class="text-[#176013] font-baloo">PawMel</span> pour prendre soin
-            de vos compagnons comme s'ils étaient les miens</p>
+    <main class="text-[#A87C56] flex-grow max-w-4xl mx-auto px-4 text-center flex flex-col justify-center items-center">
+        <h1 class="text-[#176013] text-5xl font-baloo mb-8">Réservation</h1>
 
-        <section id="avis" class="bg-[#FFF4DF] py-16 px-4">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-baloo text-[#176013] mb-8">Ils m'ont fait confiance</h2>
-
-                <!-- Spinner -->
-                <div id="loading" class="flex justify-center mb-8">
-                    <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#A87C56]"></div>
-                </div>
-
-                <!-- Avis -->
-                <div id="avis-container"></div>
-
-                <!-- Bouton vers Google -->
-                <div class="mt-10" id="google-reviews-link-container">
-                    <!-- Le lien vers Google sera inséré ici dynamiquement -->
-                </div>
-            </div>
-        </section>
+        <div class="flex flex-col lg:flex-row gap-6">
+            <a href="/assets/PawMel - Grilles Tarifaires 2025.pdf" target="_blank" rel="noopener noreferrer"
+                class="px-8 py-3 bg-[#176013] text-[#FFF4DF] rounded-full text-lg hover:bg-[#2b8a28] transition">
+                GRILLES TARIFAIRES
+            </a>
+            <a href="https://forms.gle/d9Mp3zvbzsS7BbSH9" target="_blank" rel="noopener noreferrer"
+                class="px-8 py-3 bg-[#176013] text-[#FFF4DF] rounded-full text-lg hover:bg-[#2b8a28] transition">
+                DEMANDE DE PRESTATION DE PET-SITTING
+            </a>
+        </div>
     </main>
 
     <footer class="bg-[#A87C56] text-[#FFF4DF] py-6 px-6">
@@ -229,11 +213,6 @@
 
     <script src="/js/burger-menu.js"> </script>
     <script src="/js/year.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzvWLMiTxSmXTAd-JfqskNoT5Wj3DB6is&libraries=places&v=beta"
-        async defer>
-        </script>
-    <script src="/js/google-reviews.js"></script>
     <script src="/js/lang-switcher.js"></script>
 
 </body>
