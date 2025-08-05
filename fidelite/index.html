@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
+    <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
 
-    <title>PawMel - Pet-sitting multi-espèces</title>
+    <title>PawMel - Programme de Fidélité</title>
 
     <meta name="description"
         content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur. Services attentionnés pour animaux de compagnie." />
@@ -186,35 +188,40 @@
 
     <main
         class="text-[#A87C56] flex-grow max-w-4xl mx-auto py-16 px-4 text-center flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-baloo mb-8">
-            Le bonheur à <br />
-            fourrure, plumes ou écailles
-        </h1>
-        <span class="mb-8">
-            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Moi, c'est Clémence</h2>
-            <p class="text-xl font-nunito">passionnée d'animaux, douce et attentive</p>
-        </span>
-        <p class="text-xl font-nunito">J'ai créé <span class="text-[#176013] font-baloo">PawMel</span> pour prendre soin
-            de vos compagnons comme s'ils étaient les miens</p>
-
-        <section id="avis" class="bg-[#FFF4DF] py-16 px-4">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-baloo text-[#176013] mb-8">Ils m'ont fait confiance</h2>
-
-                <!-- Spinner -->
-                <div id="loading" class="flex justify-center mb-8">
-                    <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#A87C56]"></div>
-                </div>
-
-                <!-- Avis -->
-                <div id="avis-container"></div>
-
-                <!-- Bouton vers Google -->
-                <div class="mt-10" id="google-reviews-link-container">
-                    <!-- Le lien vers Google sera inséré ici dynamiquement -->
-                </div>
+        <h1 class="text-[#176013] text-5xl font-baloo mb-8">Programme de Fidélité</h1>
+        <p class="text-xl">Parce que votre confiance compte, je vous remercie à ma façon 💚</p>
+        <div class="flex items-center justify-center mt-6 text-2xl font-semibold">
+            <span class="mr-2">1 visite = 1</span>
+            <img src="/assets/paw-stamp.png" alt="Tampon patte" class="h-8 w-8 inline-block" />
+        </div>
+        <div
+            class="flex flex-col sm:flex-row items-center justify-center mt-6 mb-6 text-2xl font-semibold text-center sm:text-left">
+            <!-- Colonne gauche -->
+            <div class="flex items-center mb-2 sm:mb-0 sm:mr-4">
+                <span class="mr-2">10</span>
+                <img src="/assets/paw-stamp.png" alt="Tampon patte" class="h-8 w-8 inline-block" />
+                <span class="ml-2">=</span>
             </div>
-        </section>
+
+            <!-- Colonne droite -->
+            <div>
+                <span class="text-[#176013]">-10%</span> sur le prochain contrat de 2 visites ou +
+            </div>
+        </div>
+        <hr class="w-full h-0.5 my-8 bg-[#A87C56] border-0 opacity-50 rounded-full" />
+        <p class="text-xl mb-2">
+            Un petit coup de patte pour vous remercier de votre fidélité.
+        </p>
+        <p class="text-xl mb-2">
+            <span class="font-semibold">À noter :</span> les visites bénéficiant déjà d’une réduction ne sont pas
+            comptabilisées dans le programme fidélité.
+            <span class="font-semibold">
+                Seules les visites payées à tarif plein sont prises en compte.
+            </span>
+        </p>
+        <p class="text-xl">
+            De quoi suivre vos gardes tout en vous rapprochant d’une belle surprise à chaque étape ! 🎁
+        </p>
     </main>
 
     <footer class="bg-[#A87C56] text-[#FFF4DF] py-6 px-6">
@@ -229,11 +236,6 @@
 
     <script src="/js/burger-menu.js"> </script>
     <script src="/js/year.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzvWLMiTxSmXTAd-JfqskNoT5Wj3DB6is&libraries=places&v=beta"
-        async defer>
-        </script>
-    <script src="/js/google-reviews.js"></script>
     <script src="/js/lang-switcher.js"></script>
 
 </body>
