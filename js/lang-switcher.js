@@ -32,9 +32,15 @@ function updateSwitcher(switcher) {
     if (path.startsWith("/en/home/")) {
         // Remplacer '/en/home/' par '/accueil/' pour garder la même page en EN
         altLangPath = path.replace("/en/home/", "/accueil/");
-    } else if (path.startsWith("/en/")) {
-        // Remplacer '/en/' par '/' pour garder la même page en FR
-        altLangPath = path.replace("/en/", "/");
+    } else if (path.startsWith("/en/booking/")) {
+        // Remplacer '/en/booking' par '/reservation' pour garder la même page en FR
+        altLangPath = path.replace("/en/booking/", "/reservation/");
+    } else if (path.startsWith("/en/loyalty/")) {
+        // Remplacer '/en/loyalty' par '/fidelite' pour garder la même page en FR
+        altLangPath = path.replace("/en/loyalty/", "/fidelite/");
+    } else if (path.startsWith("/en/social-media/")) {
+        // Remplacer '/en/social-media' par '/reseaux-sociaux' pour garder la même page en FR
+        altLangPath = path.replace("/en/social-media/", "/reseaux-sociaux/");
     } else if (path.startsWith("/accueil/")) {
         // Remplacer '/accueil/' par '/en/home/' pour garder la même page en EN
         altLangPath = path.replace("/accueil/", "/en/home/");
@@ -44,15 +50,21 @@ function updateSwitcher(switcher) {
     } else if (path.startsWith("/plus/")) {
         // Remplacer '/plus/' par '/en/plus/' pour garder la même page en EN
         altLangPath = path.replace("/plus/", "/en/plus/");
-    } else if (path.startsWith("/booking/")) {
-        // Remplacer '/booking/' par '/en/booking/' pour garder la même page en EN
-        altLangPath = path.replace("/booking/", "/en/booking/");
-    } else if (path.startsWith("/social-media/")) {
-        // Remplacer '/social-media/' par '/en/social-media/' pour garder la même page en EN
-        altLangPath = path.replace("/social-media/", "/en/booking/");
+    } else if (path.startsWith("/fidelite/")) {
+        // Remplacer '/plus/' par '/en/plus/' pour garder la même page en EN
+        altLangPath = path.replace("/fidelite/", "/en/loyalty/");
+    } else if (path.startsWith("/reservation/")) {
+        // Remplacer '/reservation/' par '/en/booking/' pour garder la même page en EN
+        altLangPath = path.replace("/reservation/", "/en/booking/");
+    } else if (path.startsWith("/reseaux-sociaux/")) {
+        // Remplacer '/reseaux-sociaux/' par '/en/social-media/' pour garder la même page en EN
+        altLangPath = path.replace("/reseaux-sociaux/", "/en/social-media/");
     } else if (path === "/" || path === "/index.html") {
         // Page d'accueil par défaut
         altLangPath = "/en/";
+    } else if (path.startsWith("/en/")) {
+        // remplacer les routes /en/ par les routes équivalente en FR
+        altLangPath = path.replace("/en/", "/");
     } else {
         // Si page non prévue, rediriger vers la home en anglais
         altLangPath = "/en/home/";

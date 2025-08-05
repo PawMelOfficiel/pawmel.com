@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
+    <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
 
-    <title>PawMel - Pet-sitting multi-espèces</title>
+    <title>PawMel - Loyalty Program</title>
 
     <meta name="description"
         content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur. Services attentionnés pour animaux de compagnie." />
@@ -51,19 +53,19 @@
     <header class="flex items-center justify-between py-6 px-6 shadow-md text-[#176013] relative">
         <!-- Logo à gauche -->
         <div class="flex-shrink-0">
-            <a href="/accueil/" class="inline-block">
+            <a href="/en/home/" class="inline-block">
                 <img src="/assets/PawMel-logo-transparent.png" alt="PawMel logo" class="h-12 w-auto" />
             </a>
         </div>
 
         <!-- Nav centré (desktop uniquement à partir de lg) -->
         <nav class="hidden lg:flex space-x-8 absolute left-1/2 transform -translate-x-1/2">
-            <a href="/accueil/" class="hover:underline">Accueil</a>
-            <a href="/services/" class=" hover:underline">Services</a>
-            <a href="/plus/" class="hover:underline">Les Plus</a>
-            <a href="/fidelite/" class="hover:underline">Programme Fidélité</a>
-            <a href="/reservation/" class="hover:underline">Réservation</a>
-            <a href="/reseaux-sociaux/" class="hover:underline">Réseaux Sociaux</a>
+            <a href="/en/home/" class="hover:underline">Home</a>
+            <a href="/en/services/" class=" hover:underline">Services</a>
+            <a href="/en/plus/" class="hover:underline">Benefits</a>
+            <a href="/en/loyalty/" class="hover:underline">Loyalty Program</a>
+            <a href="/en/booking/" class="hover:underline">Booking</a>
+            <a href="/en/social-media/" class="hover:underline">Social Media</a>
         </nav>
 
         <!-- Icônes + bouton à droite (desktop à partir de lg) -->
@@ -104,9 +106,9 @@
             <div id="lang-switcher-desktop" class="ml-4"></div>
 
             <!-- Bouton Réserver -->
-            <a href="/reservation/"
+            <a href="/en/booking/"
                 class="ml-4 px-10 py-2 bg-[#176013] text-lg text-[#FFF4DF] rounded-full hover:bg-[#2b8a28] transition">
-                Réserver
+                Book
             </a>
         </div>
 
@@ -132,13 +134,12 @@
 
             <div id="lang-switcher-burger"></div>
 
-            <a href="/accueil/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Accueil</a>
-            <a href="/services/" class="reservation block text-lg font-semibold py-2 hover:text-[#A87C56]">Services</a>
-            <a href="/plus/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Les Plus</a>
-            <a href="/fidelite/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Programme de Fidélité</a>
-            <a href="/reservation/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Réservation</a>
-            <a href="/reseaux-sociaux/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Réseaux
-                Sociaux</a>
+            <a href="/en/home/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Home</a>
+            <a href="/en/services/" class=" block text-lg font-semibold py-2 hover:text-[#A87C56]">Services</a>
+            <a href="/en/plus/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Benefits</a>
+            <a href="/en/loyalty/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Loyalty Program</a>
+            <a href="/en/booking/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Booking</a>
+            <a href="/en/social-media/" class="block text-lg font-semibold py-2 hover:text-[#A87C56]">Social Media</a>
 
             <div class="flex space-x-4 py-4">
                 <!-- Icônes réseaux sociaux -->
@@ -177,44 +178,15 @@
             </div>
 
             <!-- Bouton Réserver mobile -->
-            <a href="/reservation/"
+            <a href="/en/booking/"
                 class="block w-full px-4 py-3 bg-[#176013] text-lg text-[#FFF4DF] text-center rounded-full hover:bg-[#2b8a28] transition">
-                Réserver
+                Book
             </a>
         </div>
     </header>
 
-    <main
-        class="text-[#A87C56] flex-grow max-w-4xl mx-auto py-16 px-4 text-center flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-baloo mb-8">
-            Le bonheur à <br />
-            fourrure, plumes ou écailles
-        </h1>
-        <span class="mb-8">
-            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Moi, c'est Clémence</h2>
-            <p class="text-xl font-nunito">passionnée d'animaux, douce et attentive</p>
-        </span>
-        <p class="text-xl font-nunito">J'ai créé <span class="text-[#176013] font-baloo">PawMel</span> pour prendre soin
-            de vos compagnons comme s'ils étaient les miens</p>
-
-        <section id="avis" class="bg-[#FFF4DF] py-16 px-4">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-baloo text-[#176013] mb-8">Ils m'ont fait confiance</h2>
-
-                <!-- Spinner -->
-                <div id="loading" class="flex justify-center mb-8">
-                    <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#A87C56]"></div>
-                </div>
-
-                <!-- Avis -->
-                <div id="avis-container"></div>
-
-                <!-- Bouton vers Google -->
-                <div class="mt-10" id="google-reviews-link-container">
-                    <!-- Le lien vers Google sera inséré ici dynamiquement -->
-                </div>
-            </div>
-        </section>
+    <main class="text-[#A87C56] flex-grow max-w-4xl mx-auto px-4 text-center flex flex-col justify-center items-center">
+        <h1 class="text-[#176013] text-5xl font-baloo mb-8">Loyalty Program</h1>
     </main>
 
     <footer class="bg-[#A87C56] text-[#FFF4DF] py-6 px-6">
@@ -229,11 +201,6 @@
 
     <script src="/js/burger-menu.js"> </script>
     <script src="/js/year.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzvWLMiTxSmXTAd-JfqskNoT5Wj3DB6is&libraries=places&v=beta"
-        async defer>
-        </script>
-    <script src="/js/google-reviews.js"></script>
     <script src="/js/lang-switcher.js"></script>
 
 </body>
