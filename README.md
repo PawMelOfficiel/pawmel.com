@@ -16,4 +16,4 @@ python3 -m http.server 8000
 
 ## Site
 
-📍 [pawmel.com](https://www.pawmel.com)
+📍 [pawmel.com](https://pawmel.com)
