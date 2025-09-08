@@ -1,49 +1,54 @@
 {
-    "dog": {
+    "Dogs": {
+        "animalFR": "Chiens",
         "at-home": {
             "thirty-minute": "15",
-            "2-thirty-minute": "25",
+            "2-30m": "25",
             "one-hour": "25",
-            "2-one-hour": "40",
+            "2-1h": "40",
             "extra-cost-per-pet": "5"
         },
         "walking": {
-            "one-hour": "20",
+            "hourly-rate": "20",
             "extra-cost-per-pet": "8"
         }
     },
-    "cat": {
+    "Cats": {
+        "animalFR": "Chats",
         "at-home": {
             "thirty-minute": "15",
-            "2-thirty-minute": "25",
+            "2-30m": "25",
             "one-hour": "25",
-            "2-one-hour": "40",
+            "2-1h": "40",
             "extra-cost-per-pet": "5"
         }
     },
-    "other": {
+    "Other": {
+        "animalFR": "NACs",
         "at-home": {
             "thirty-minute": "12",
-            "2-thirty-minute": "20",
+            "2-30m": "20",
             "one-hour": "20",
-            "2-one-hour": "35",
+            "2-1h": "35",
             "extra-cost-per-pet": "5"
         }
     },
-    "bird": {
+    "Birds": {
+        "animalFR": "Oiseaux",
         "at-home": {
             "thirty-minute": "12",
-            "2-thirty-minute": "20",
+            "2-30m": "20",
             "one-hour": "20",
-            "2-one-hour": "35"
+            "2-1h": "35"
         }
     },
-    "fish": {
+    "Fish": {
+        "animalFR": "Poissons",
         "at-home": {
             "thirty-minute": "12",
-            "2-thirty-minute": "20",
+            "2-30m": "20",
             "one-hour": "20",
-            "2-one-hour": "35"
+            "2-1h": "35"
         }
     }
 }
