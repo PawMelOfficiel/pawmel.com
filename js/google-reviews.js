@@ -7,8 +7,8 @@ async function fetchReviews(placeId) {
   const result = await place.fetchFields({
     fields: ["reviews", "rating", "userRatingCount"],
   });
-  return result.place.Dg.reviews?.sort((a, b) => b.publishTime - a.publishTime) // Tri décroissant
-    .slice(0, 6); // Garde les 6 plus récents
+  return result.place.Fg.reviews?.sort((a, b) => b.publishTime - a.publishTime) // Tri décroissant
+    .slice(0, 5); // Garde les 5 plus récents
 }
 
 async function displayReviews() {
@@ -31,7 +31,7 @@ async function displayReviews() {
     }
 
     avisContainer.className =
-      "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start";
+      "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 items-center";
     avisContainer.innerHTML = "";
 
     reviews.forEach((review, index) => {
