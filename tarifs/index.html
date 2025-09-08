@@ -7,7 +7,7 @@
     <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
     <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
 
-    <title>PawMel - Pet-sitting multi-espèces</title>
+    <title>PawMel - Tarifs</title>
 
     <meta name="description"
         content="PawMel, pour prendre soin de vos compagnons à fourrure, plumes ou écailles avec passion et douceur. Services attentionnés pour animaux de compagnie." />
@@ -189,36 +189,11 @@
     </header>
 
     <main
-        class="text-[#A87C56] flex-grow max-w-4xl mx-auto py-16 px-4 text-center flex flex-col justify-center items-center">
-        <h1 class="text-5xl font-baloo mb-8">
-            Le bonheur à <br />
-            fourrure, plumes ou écailles
-        </h1>
-        <span class="mb-8">
-            <h2 class="text-[#176013] text-3xl font-baloo">👋🏻 Moi, c'est Clémence</h2>
-            <p class="text-xl font-nunito">passionnée d'animaux, douce et attentive</p>
-        </span>
-        <p class="text-xl font-nunito">J'ai créé <span class="text-[#176013] font-baloo">PawMel</span> pour prendre soin
-            de vos compagnons comme s'ils étaient les miens</p>
+        class="text-[#A87C56] flex-grow max-w-4xl w-full mt-8 mx-auto px-4 text-center flex flex-col justify-center items-center">
+        <h1 class="text-[#176013] text-5xl font-baloo mb-8">Tarifs</h1>
 
-        <section id="avis" class="bg-[#FFF4DF] py-16 px-4">
-            <div class="max-w-6xl mx-auto text-center">
-                <h2 class="text-4xl font-baloo text-[#176013] mb-8">Ils m'ont fait confiance</h2>
-
-                <!-- Spinner -->
-                <div id="loading" class="flex justify-center mb-8">
-                    <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-[#A87C56]"></div>
-                </div>
-
-                <!-- Avis -->
-                <div id="avis-container"></div>
-
-                <!-- Bouton vers Google -->
-                <div class="mt-10" id="google-reviews-link-container">
-                    <!-- Le lien vers Google sera inséré ici dynamiquement -->
-                </div>
-            </div>
-        </section>
+        <!-- Conteneur où JS injectera les tarifs -->
+        <div id="prices-container" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8"></div>
     </main>
 
     <footer class="bg-[#A87C56] text-[#FFF4DF] py-6 px-6">
@@ -233,12 +208,8 @@
 
     <script src="/js/burger-menu.js"> </script>
     <script src="/js/year.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzvWLMiTxSmXTAd-JfqskNoT5Wj3DB6is&libraries=places&v=beta"
-        async defer>
-        </script>
-    <script src="/js/google-reviews.js"></script>
     <script src="/js/lang-switcher.js"></script>
+    <script src="/js/prices.js"></script>
 
 </body>
 
