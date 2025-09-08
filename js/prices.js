@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             const bookingLink = document.createElement("a");
             bookingLink.className =
                 "mt-auto block w-full px-4 py-3 bg-[#176013] text-lg text-[#FFF4DF] text-center rounded-full hover:bg-[#2b8a28] transition"; // mt-auto ajouté
-            bookingLink.href = isEnglish ? "/booking" : "/reservation";
+            bookingLink.href = isEnglish ? "/en/booking" : "/reservation";
             bookingLink.textContent = isEnglish ? "Book" : "Réserver";
 
             card.appendChild(bookingLink);

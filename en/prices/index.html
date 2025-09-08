@@ -7,7 +7,7 @@
     <link rel="alternate" hreflang="en" href="https://pawmel.com/en/" />
     <link rel="alternate" hreflang="fr" href="https://pawmel.com/" />
 
-    <title>PawMel - Services</title>
+    <title>PawMel - Prices</title>
 
     <meta name="description"
         content="PawMel, to take care of your furry, feathered or scaled companions, passionately and gently. Attentive pet services." />
@@ -188,108 +188,11 @@
     </header>
 
     <main
-        class="flex-grow flex flex-col justify-center items-center text-[#A87C56] max-w-7xl mx-auto px-4 py-12 text-center">
-        <h1 class="text-[#176013] text-5xl font-baloo mb-16">What I offer</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Promenades -->
-            <div>
-                <img src="/assets/promenade.png" alt="Dog-walking" class="w-full h-48 object-contain mb-4">
-                <p class="text-3xl font-baloo">Dog-walking</p>
-            </div>
-            <!-- Visites à domicile -->
-            <div>
-                <img src="/assets/visite-domicile.png" alt="At-home visits" class="w-full h-48 object-contain mb-4">
-                <p class="text-3xl font-baloo">At-home visits</p>
-            </div>
-            <!-- Gardes ponctuelles ou régulières -->
-            <div>
-                <img src="/assets/gardes-ponctuelles-regulieres.png" alt="Occasional or regular pet-sitting"
-                    class="w-full h-48 object-contain mb-4">
-                <p class="text-3xl font-baloo">Occasional or regular pet-sitting</p>
-            </div>
-            <!-- Arrosage des plantes et Relevé du courrier -->
-            <div>
-                <img src="/assets/plantes-courrier.png" alt="Plants watering & Mail checking"
-                    class="w-full h-48 object-contain mb-4">
-                <p class="text-3xl font-baloo">Plants watering & Mail checking</p>
-            </div>
-        </div>
+        class="text-[#A87C56] flex-grow max-w-4xl w-full mt-8 mx-auto px-4 text-center flex flex-col justify-center items-center">
+        <h1 class="text-[#176013] text-5xl font-baloo mb-8">Prices</h1>
 
-        <hr class="w-full h-0.5 my-8 bg-[#A87C56] border-0 opacity-50 rounded-full" />
-
-        <h1 class="text-[#176013] text-5xl font-baloo mb-16">How does it work?</h1>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
-            <!-- Step 1 -->
-            <div class="flex flex-col">
-                <h2 class="text-8xl text-[#176013] font-baloo">1.</h2>
-                <h3 class="text-2xl font-baloo mb-2">First Contact</h3>
-                <div class="flex flex-col justify-left mt-auto mb-auto">
-                    <p class="text-xl text-center sm:text-left mb-2">Fill out the
-                        <a href="https://forms.gle/d9Mp3zvbzsS7BbSH9" target="_blank" rel="noopener noreferrer"
-                            class="text-[#176013] font-semibold hover:underline">
-                            🔗 pet-sitting service request form.
-                        </a>
-                    </p>
-                    <p class="text-xl text-center sm:text-left">
-                        I will then send you a
-                        <span class="text-[#176013] font-semibold">
-                            quotation.
-                        </span>
-                    </p>
-                </div>
-            </div>
-            <!-- Step 2 -->
-            <div class="flex flex-col">
-                <h2 class="text-8xl text-[#176013] font-baloo">2.</h2>
-                <h3 class="text-2xl font-baloo mb-2">Meet & Greet</h3>
-                <div class="flex flex-col justify-left mt-auto mb-auto">
-                    <p class="text-xl mb-2 text-center sm:text-left">
-                        A <span class="text-[#176013] font-semibold">free preliminary visit</span> will be scheduled at
-                        your home a few days before the pet-sitting.
-                    </p>
-                    <p class="text-xl text-center sm:text-left">
-                        This will allow me to
-                        <span class="text-[#176013] font-semibold">
-                            get to know you, your pet, and their familiar environment.
-                        </span>
-                    </p>
-                </div>
-            </div>
-            <!-- Step 3 -->
-            <div class="flex flex-col">
-                <h2 class="text-8xl text-[#176013] font-baloo">3.</h2>
-                <h3 class="text-2xl font-baloo mb-2">Pet Info Sheet</h3>
-                <div class="flex flex-col justify-left mt-auto mb-auto">
-                    <p class="text-xl mb-2 text-center sm:text-left">
-                        After our meeting, I will invite you to fill out
-                        <span class="text-[#176013] font-semibold">
-                            a form with all the essential information
-                        </span>
-                        about your pet: food, care, habits, vet contact, etc.
-                    </p>
-                    <p class="text-xl text-[#176013] font-semibold text-center sm:text-left">
-                        ➡️ Only once per pet.
-                    </p>
-                </div>
-            </div>
-            <!-- Step 4 -->
-            <div class="flex flex-col">
-                <h2 class="text-8xl text-[#176013] font-baloo">4.</h2>
-                <h3 class="text-2xl font-baloo mb-2">Confirmation</h3>
-                <div class="flex flex-col justify-left mt-auto mb-auto">
-                    <p class="text-xl mb-2 text-center sm:text-left">
-                        ✅ Once everything is confirmed,
-                        <span class="text-[#176013] font-semibold">
-                            we sign the contract
-                        </span>
-                        with the payment details.
-                    </p>
-                    <p class="text-xl text-[#176013] font-semibold text-center sm:text-left">
-                        The pet-sitting is officially booked!
-                    </p>
-                </div>
-            </div>
-        </div>
+        <!-- Conteneur où JS injectera les tarifs -->
+        <div id="prices-container" class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-8"></div>
     </main>
 
     <footer class="bg-[#A87C56] text-[#FFF4DF] py-6 px-6">
@@ -305,6 +208,7 @@
     <script src="/js/burger-menu.js"> </script>
     <script src="/js/year.js"></script>
     <script src="/js/lang-switcher.js"></script>
+    <script src="/js/prices.js"></script>
 
 </body>
 
