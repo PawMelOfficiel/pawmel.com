@@ -35,6 +35,9 @@ function updateSwitcher(switcher) {
     } else if (path.startsWith("/en/booking/")) {
         // Remplacer '/en/booking' par '/reservation' pour garder la même page en FR
         altLangPath = path.replace("/en/booking/", "/reservation/");
+    } else if (path.startsWith("/en/prices/")) {
+        // Remplacer '/en/prices' par '/tarifs' pour garder la même page en FR
+        altLangPath = path.replace("/en/prices/", "/tarifs/");
     } else if (path.startsWith("/en/loyalty/")) {
         // Remplacer '/en/loyalty' par '/fidelite' pour garder la même page en FR
         altLangPath = path.replace("/en/loyalty/", "/fidelite/");
@@ -56,6 +59,9 @@ function updateSwitcher(switcher) {
     } else if (path.startsWith("/reservation/")) {
         // Remplacer '/reservation/' par '/en/booking/' pour garder la même page en EN
         altLangPath = path.replace("/reservation/", "/en/booking/");
+    } else if (path.startsWith("/tarifs/")) {
+        // Remplacer '/tarifs/' par '/en/prices/' pour garder la même page en EN
+        altLangPath = path.replace("/tarifs/", "/en/prices/");
     } else if (path.startsWith("/reseaux-sociaux/")) {
         // Remplacer '/reseaux-sociaux/' par '/en/social-media/' pour garder la même page en EN
         altLangPath = path.replace("/reseaux-sociaux/", "/en/social-media/");
